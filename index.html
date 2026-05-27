@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness & Cyber Safety</title>
+    
+    <!-- comp css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- comp js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+
+
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #63B3ED;">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="../imgs/logo.jpg" alt="Cyber Safety & Digital Wellness Image" class="rounded-circle" width="70">
+        Digital Wellness & Cyber Safety 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"> <!-- flexbox when expanded, block when compressed -->
+        <div class="navbar-nav">
+          <a class="nav-link active me-2" aria-current="page" href="index.html"><b>Home</b></a>
+          <a class="nav-link me-2" href="info.html">Informational</a>
+          <a class="nav-link me-2" href="form.html">Survey</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center"> <!-- https://www.channelnewsasia.com/singapore/screen-time-devices-survey-teens-spend-daily-stress-4908281 -->
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start">
+                  <h1 class="display-4 fw-bold">Singapore youths spend 8.5 hours a day to screens.</h1>
+                  <p class="lead">Is this how you want to be spending your youth?</p>
+                  <button id="hero-btn" class="btn btn-primary btn-lg mt-3">Reclaim your time back!</button>
+              </div>
+              <div class="col-md-6 text-center"> <!-- centre img horizontally -->
+                  <img src="../imgs/hero-img.jpg" alt="Hero Image" class="img-fluid hero-img mt-4" style="max-width: 55%;">
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Next section opener -->
+  <section class="py-5 bg-white">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold">Overcoming Modern Challenges</h2>
+                <p class="lead text-secondary pt-3" style="font-family: cursive">With technology becoming more apparent, it's easy to experience <strong class="text-danger">Digital Burnout</strong> and fall into <strong class="text-danger">Cyber Insecurity</strong>.
+                <span class="text-dark">Therefore, it's important that we learn to overcome these challenges and harness the full benefits of technology!</span></p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Problems vs Benefits -->
+  <section class="bg-light">
+    <h2 class="pt-5 ms-3 text-center">Problems and Benefits of technology</h2>
+    <div class="container-fluid py-4 d-flex align-items-center justify-content-center">
+      <div class="row vw-100 justify-content-center">
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-5">
+          <div class="card shadow-md" style="width: 22rem;"> <!-- card 1 -->
+            <img id="toggle-img-1" class="toggle-card-img card-img-top" src="../imgs/phone-addiction.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 id="card-title-1" class="toggle-card-title card-title text-danger">Digital Addiction ⚠️</h4>
+              <div id="card-content-1" class="toggle-card-content card-text">
+                <ul>
+                  <li>Digital burnout & eye strain</li>
+                  <li>Cyberbullying & online threats</li>
+                  <li>Privacy concerns</li>
+                  <li>Reduced physical activity</li>
+                </ul>
+              </div>
+              <button id="toggle-button-1" class="toggle-card-btn btn btn-primary">See Benefits</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-5"> 
+          <div class="card shadow-md" style="width: 22rem;"> <!-- Card 2 -->
+            <img id="toggle-img-2" class="toggle-card-img card-img-top" src="../imgs/privacy.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 id="card-title-2" class="toggle-card-title card-title text-danger">Privacy Concerns 🔐</h4>
+              <div id="card-content-2" class="toggle-card-content card-text">
+                <ul>
+                  <li>Identity Theft</li>
+                  <li>Financial loss</li>
+                  <li>Less trust in digital platforms</li>
+                  <li>Loss of freedom</li>
+                </ul>
+              </div>
+              <button id="toggle-button-2" class="toggle-card-btn btn btn-primary">See Benefits</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-5">
+          <div class="card shadow-md" style="width: 22rem;"> <!-- Card 3 -->
+            <img id="toggle-img-3" class="toggle-card-img card-img-top" src="../imgs/cyberbullying.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 id="card-title-3" class="toggle-card-title card-title text-danger">Cyberbullying 💔</h4>
+              <div id="card-content-3" class="toggle-card-content card-text">
+                <ul>
+                  <li>Victims suffer emotional trauma</li>
+                  <li>Decreased self-esteem</li>
+                  <li>Social withdrawl</li>
+                  <li>Sometimes, suicidal thoughts</li>
+                </ul>
+              </div>
+              <button id="toggle-button-3" class="toggle-card-btn btn btn-primary">See Benefits</button>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </section>
+  <!-- Statistics by numbers -->
+  <section class="statistics-section py-5">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="display-5 fw-bold">Astonishing Numbers</h2>
+          <p class="lead text-info fw-bold" style="font-family: cursive;">that depict Singapore youths Digital Welness and Cyber Safety</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center p-3">
+            <h3 class="text-danger bg-light rounded" id="increasecounter1">0</h3> <!-- https://www.scamshield.gov.sg/files/Scams%20and%20Cybercrime%20Briefs/2024_annual_scams_and_cybercrime_brief.pdf -->
+            <p class="w-75 mx-auto text-center">had been lost to scams in Singapore since the website loaded, impacting many victims financially.</p>
+            <small class="text-muted">Data from: <a href="https://www.scamshield.gov.sg/files/Scams%20and%20Cybercrime%20Briefs/2024_annual_scams_and_cybercrime_brief.pdf">Information</a></small>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center p-3">
+            <h3 class="text-warning bg-light rounded" id="increasecounter2">50</h3>
+            <p class="w-75 mx-auto text-center">of Singaporean youths have problematic smartphone use</p> <!-- https://www.straitstimes.com/singapore/health/young-and-troubled-more-teens-in-singapore-getting-hooked-on-digital-devices-and-seeking-help? -->
+            <small class="text-muted">Data from: <a href="https://www.straitstimes.com/singapore/health/young-and-troubled-more-teens-in-singapore-getting-hooked-on-digital-devices-and-seeking-help?">Information</a></small>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center p-3">
+            <h3 class="text-success bg-light rounded" id="increasecounter3">67</h3>
+            <p class="w-75 mx-auto text-center">of Singaporean youths are keen to learn more about cybersecurity.</p> <!-- https://www.csa.gov.sg/news-events/press-releases/csa-releases-key-findings-from-first-cybersecurity-public-awareness-survey? -->
+            <small class="text-muted">Data from: <a href="https://www.csa.gov.sg/news-events/press-releases/csa-releases-key-findings-from-first-cybersecurity-public-awareness-survey?">Information</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Carousel --> <!-- adapted from https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_carousel -->
+  <section class="bg-light py-5">
+    <div class="row text-center mb-4">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="fs-1 fw-bold">
+              <span class="text-primary">Digital Wellness</span> and <span class="text-danger">Cyber Safety</span> Quotes
+            </h2>
+        </div>
+    </div>
+    
+    <div id="demo" class="carousel slide w-50 mx-auto bg-success" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-success"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active bg-danger"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active bg-warning"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="active bg-info"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="active bg-primary"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active"><!-- 1 -->
+          <div class="card d-flex justify-content-center align-items-center text-center bg-opacity" style="height: 400px; background-image: url('../imgs/quote-1.jpg'); background-size: cover; background-position: center; background-color: rgba(255, 248, 225, 0.25); border-left: 6px solid #009688;">
+            <div class="quote px-4">
+              <h3 class="mb-3 text-white" style="font-size: 1.75rem; font-style: italic; position: relative;">
+                <span class="text-success" style="font-size: 3rem; position: absolute; left: -5px; top: -15px;">“</span>
+                Technology is cool, but you've got to use it as opposed to letting it use you.
+                <span class ="text-success" style="font-size: 3rem;">”</span>
+              </h3>
+              <p class="text-white">— Prince</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"><!-- 2 -->
+          <div class="card d-flex justify-content-center align-items-center text-center bg-opacity" style="height: 400px; background-image: url('../imgs/quote-2.jpg'); background-size: cover; background-position: center; background-color: rgba(255, 248, 225, 0.25); border-left: 6px solid #d83208;">
+            <div class="quote px-4">
+              <h3 class="mb-3 text-white" style="font-size: 1.75rem; font-style: italic; position: relative;">
+                <span class="text-danger" style="font-size: 3rem; position: absolute; left: -5px; top: -15px;">“</span>
+                Cybersecurity is not just about protecting your devices. It's about protecting yourself.
+                <span class="text-danger" style="font-size: 3rem; color: #009688;">”</span>
+              </h3>
+              <p class="text-white">— Anonymous</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"><!-- 3 -->
+          <div class="card d-flex justify-content-center align-items-center text-center bg-opacity" style="height: 400px; background-image: url('../imgs/quote-3.jpg'); background-size: cover; background-position: center; background-color: rgba(255, 248, 225, 0.25); border-left: 6px solid #f7f306;">
+            <div class="quote px-4">
+              <h3 class="mb-3 text-white" style="font-size: 1.75rem; font-style: italic; position: relative;">
+                <span class="text-warning" style="font-size: 3rem; position: absolute; left: -5px; top: -15px;">“</span>
+                Take care of your digital self, so that your real self can thrive.
+                <span class="text-warning" style="font-size: 3rem;">”</span>
+              </h3>
+              <p class="text-white">— Alexandra Samuel</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"><!-- 4 -->
+          <div class="card d-flex justify-content-center align-items-center text-center bg-opacity" style="height: 400px; background-image: url('../imgs/quote-4.jpg'); background-size: cover; background-position: center; background-color: rgba(255, 248, 225, 0.25); border-left: 6px solid #05a7d4;">
+            <div class="quote px-4">
+              <h3 class="mb-3 text-white" style="font-size: 1.75rem; font-style: italic; position: relative;">
+                <span class="text-info" style="font-size: 3rem; position: absolute; left: -5px; top: -15px;">“</span>
+                Privacy - like eating and breathing - is one of life's basic requirements.
+                <span class="text-info" style="font-size: 3rem;">”</span>
+              </h3>
+              <p class="text-white">— Katherine Neville</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="carousel-item"><!-- 5 -->
+          <div class="card d-flex justify-content-center align-items-center text-center bg-opacity" style="height: 400px; background-image: url('../imgs/quote-5.jpg'); background-size: cover; background-position: center; background-color: rgba(255, 248, 225, 0.25); border-left: 6px solid #1c04d4;">
+            <div class="quote px-4">
+              <h3 class="mb-3 text-white" style="font-size: 1.75rem; font-style: italic; position: relative;">
+                <span class="text-primary" style="font-size: 3rem; position: absolute; left: -5px; top: -15px;">“</span>
+                We need to learn to use technology in a way that promotes mindfulness and balance, rather than mindlessness and addiction.
+                <span class="text-primary" style="font-size: 3rem;">”</span>
+              </h3>
+              <p class="text-white">— Arianna Huffington</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+<!-- Review cards -->
+  <section class="bg-white">
+  <div class="reviews container py-5">
+
+    <div class="row text-center mb-4">
+        <div class="col-lg-8 mx-auto">
+            <div class="fs-1 fw-bold">
+              <p class="text-primary">Rate these experiences for fellow youths,</p>
+              <p class="fs-5 text-muted">on their experience in Digital wellbeing and Cyber safety</p>
+              <p class="display-5 mt-4">Let's go! 😀</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 shadow-lg testimonial-card mt-5">
+      <div class="d-flex align-items-center mb-3">
+        <img src="../imgs/profile-photo-1.jpg" alt="Profile Picture" class="rounded-circle me-3" width="60" height="60" style="overflow: hidden; object-fit: cover;">
+        <div>
+          <h5 class="mb-0 fw-bold">Ben du Lipenson</h5>
+          <small class="text-muted">@itsbendu</small>
+        </div>
+        <div class="ms-auto star-rating text-warning">
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+        </div>
+      </div>
+      <p class="mb-0 text-muted">
+        For the longest time, I didn't realize how much time I was wasting scrolling through social media every day. It became a habit that left me feeling tired and distracted. After learning about digital wellness, I started setting daily screen time limits and scheduling breaks away from my phone. The change was amazing—I felt more focused in school, less anxious, and even had more time for hobbies I love.
+      </p>
+    </div>
+
+    <div class="card p-4 shadow-lg testimonial-card mt-5">
+      <div class="d-flex align-items-center mb-3">
+        <img src="../imgs/profile-photo-2.jpg" alt="Profile Picture" class="rounded-circle me-3" width="60" height="60" style="overflow: hidden; object-fit: cover;">
+        <div>
+          <h5 class="mb-0 fw-bold">Ali Mandipadi</h5>
+          <small class="text-muted">@ali_going_live</small>
+        </div>
+        <div class="ms-auto star-rating text-warning">
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+        </div>
+      </div>
+      <p class="mb-0 text-muted">
+        I remember someone I thought was a friend online asked me to share my password, and I almost did because I trusted them. Luckily, I took a cyber safety workshop before anything serious happened. It really opened my eyes to how careful you need to be about what you share and who you trust online. Now, I'm much more cautious and always double-check before sharing any personal info.
+      </p>
+    </div>
+
+    <div class="card p-4 shadow-lg testimonial-card mt-5">
+      <div class="d-flex align-items-center mb-3">
+        <img src="../imgs/profile-photo-3.jpg" alt="Profile Picture" class="rounded-circle me-3" width="60" height="60" style="overflow: hidden; object-fit: cover;">
+        <div>
+          <h5 class="mb-0 fw-bold">Christopher Cathedra</h5>
+          <small class="text-muted">@your_friendly_chris</small>
+        </div>
+        <div class="ms-auto star-rating text-warning">
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+          <span class="bi bi-star me-1 fs-2"></span>
+        </div>
+      </div>
+      <p class="mb-0 text-muted">
+        Being bullied online felt overwhelming and isolating at first. I wasn't sure how to handle it until I talked to my parents and teachers about it. They helped me learn how to block and report bullies, and it gave me back control over my online world. That experience made me realize the importance of having strong cyber safety habits and a support system you can rely on.
+      </p>
+    </div>
+
+  </div>
+  </section>
+
+  <div class="row text-center mb-4">
+    <div class="col-lg-8 mx-auto">
+      <div class="fs-1 fw-bold">
+        <p class="text-primary">Ready to <span class="text-danger">CHANGE</span> your own <span class="text-black">life?</span></p>
+        <p class="fs-5 text-muted">Click this button to learn how you can strive for a better version of yourself online</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="info.html" class="btn btn-primary btn-lg mt-3 d-block w-25 mx-auto bi bi-award-fill text-white" style="text-decoration: none;">Let's go!</a>
+
+
+
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <h5>Dharun Logesh</h5>
+    <p>Committed to digital wellbeing and cyber safety for youth.</p>
+    <p>Email: <a href="dharunlogesh18@gmail.com" class="text-light text-decoration-none">dharunlogesh18@gmail.com</a></p>
+
+    <div class="my-3">
+      <a href="mailto:dharunlogesh18@gmail.com" class="text-light mx-2 fs-4" aria-label="Mail"><span class="bi bi-envelope"></span></a>
+    </div>
+
+    <small>&copy; 2025 Dharun Logesh. All rights reserved.</small>
+  </div>
+</footer>
+
+
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- script js file -->
+  <script src="../script.js"></script>
+
+
+</body>
+</html>
+
+
+
+

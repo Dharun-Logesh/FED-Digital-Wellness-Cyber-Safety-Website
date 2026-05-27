@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness & Cyber Safety</title>
+    <!-- comp css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="background: linear-gradient(135deg,  #72a0ee 0%, #8e4dd4 100%)">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #63B3ED;">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="../imgs/logo.jpg" alt="Cyber Safety & Digital Wellness Image" class="rounded-circle" width="70">
+        Digital Wellness & Cyber Safety 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"> <!-- flexbox when expanded, block when compressed -->
+        <div class="navbar-nav">
+          <a class="nav-link me-2" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link me-2" href="info.html">Informational</a>
+          <a class="nav-link active me-2" href="form.html"><b>Survey</b></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h1 class="text-center text-warning mt-5">Digital Wellness & Cyber Safety Survey</h1>
+    <p class="fs-4 text-center text-dark">Your wellbeing, is our priority.</p>
+
+    <div class="container w-75 mx-auto">
+      <div class="card">
+        <form class="p-5">
+          <!-- name section -->
+          <section class="mb-4">
+            <h3 class="mb-4 text-danger">Registration for an account</h3>
+            <section class="row">
+              <div class="mb-3 col-md-6">
+                <label for="name" class="form-label fw-semibold">Full name <span class="text-danger">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" aria-required="true" required>
+                <p id="name-error"> </p>
+              </div>
+              <!-- email -->
+              <div class="mb-3 col-md-6">
+                <label for="email" class="form-label fw-semibold">Email<span class="text-danger">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" aria-required="true" required>
+                <p id="email-error"> </p>
+              </div>
+            </section>
+            <!-- age -->
+            <section class="row">
+              <div class="mb-3 col-md-6">
+                <label for="age" class="form-label fw-semibold">Age<span class="text-danger">*</span></label>
+                <input type="number" id="age" name="age" class="form-control" aria-required="true" required>
+                <p id="age-error"> </p>
+              </div>
+              <!-- contact no -->
+              <div class="mb-3 col-md-6">
+                <label for="phone_number" class="form-label fw-semibold">Contact Number<span class="text-danger">*</span></label>
+                <input type="number" id="phone_number" name="phone_number" class="form-control" aria-required="true" required>
+                <p id="contact-error"> </p>
+              </div>
+            </section>
+            <!-- password -->
+            <section class="row">
+              <div class="mb-3 col-md-6">
+                <label for="password" class="form-label fw-semibold">Password<span class="text-danger">*</span></label>
+                <input type="password" id="password" name="password" class="form-control" aria-required="true" required>
+                <p id="password-error"> </p>
+              </div>
+              <!-- confirm password -->
+              <div class="mb-3 col-md-6">
+                <label for="c_password" class="form-label fw-semibold">Confirm Password<span class="text-danger">*</span></label>
+                <input type="password" id="c_password" name="c_password" class="form-control" aria-required="true" required>
+                <p id="c_password-error"> </p>
+              </div>
+            </section>
+
+            <!-- gender -->
+            <label class="fw-semibold mb-2">Gender<span class="text-danger">*</span></label>
+            <section class="row">
+              <div class="mb-3">
+                <div class="form-check col-md-4 mb-1">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check col-md-4 mb-1">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check col-md-4 mb-1">
+                  <input class="form-check-input" type="radio" name="gender" id="pnts" value="pnts" required>
+                  <label class="form-check-label" for="pnts">Prefer not to say</label>
+                </div>
+              </div>
+            </section>
+          </section>
+          
+          <section>
+            <h4 class="mb-3">Digital Wellness Assessment</h4>
+            
+            <!-- slider -->
+            <div class="mb-4">
+              <div>
+                <label for="sliderrange" class="form-label">Daily Screen Time (hours)<span class="text-danger">*</span></label>
+                <input type="range" min="0" max="24" value="4" step="0.5" class="form-range" id="sliderrange">
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>0h</p>
+                <span id="hours" class="fs-3 badge bg-primary">8 hours</span>
+                <p>24h</p>
+              </div>
+            </div>
+
+            <!-- dropdown -->
+            <div class="mb-4">
+              <label for="devices" class="form-label">Most Used Device<span class="text-danger">*</span></label>
+              <select class="form-select" id="devices" data-live-search="true" required>
+                  <option value="" disabled selected>Choose...</option>
+                  <option value="smartphone">Smartphone</option>
+                  <option value="tablet">Tablet</option>
+                  <option value="laptop">Laptop</option>
+                  <option value="desktop">Desktop</option>
+              </select>
+            </div>
+
+            <!-- char limit -->
+            <div class="mb-4">
+              <label for="goals" class="form-label">Your Digital Wellness Goals<span class="text-danger">*</span></label>
+              <textarea class="form-control" id="goals" rows="3" maxlength="200" placeholder="Share your digital wellness goals..."></textarea>
+              <div class="d-flex justify-content-end">
+                <p id="char" class="text-muted">200 characters remaining</p>
+              </div>
+            </div>
+
+            <div class="mb-4"><!-- modal inspired and adapted from  https://getbootstrap.com/docs/5.0/components/modal/ -->
+              <!-- Button trigger modal -->
+              <div class="row">
+                <h5 class="col-md-9">Please read the terms and conditions before continuing...</h5>
+                <button type="button" class="btn btn-warning col-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Terms & Conditions
+                </button>
+              </div>
+              <p id="t-c_error"></p>
+
+              <!-- modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cyber Safety & Digital Wellness Pledge</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p><strong>You are about to take the cyber pledge and the digital pledge. Once you take this pledge, you are to follow it by heart throughout your life, practising these habits whenever possible.</strong></p>
+                      <div>
+                        <p class="fw-semibold text-primary">Digital Wellness Pledge</p>
+                        <p>I, as a member of society, from now onwards, will follow Digital Wellness practises whenever possible. I will prioritize my helth over any digital satisfaction and take care of my own self. I will not let technology limit my capabilities and i will not fall victim to addiction of technology. I will do my best effort to educate others on the benefits of technology and promote change in other like minded youths who are stuggling to change for the better.</p>
+                      </div>
+                      <div>
+                        <p class="fw-semibold text-danger">Cyber Safety Pledge</p>
+                        <p>As a youth in the 21st Century, I understand that I have the power to be able to do limitless things with my devices. However, I promise to adhere to safety practises when being online to protect myself and my loved ones. I will always prioritise safety over any convinience, and report any potential digital attacks and events that potentially risk the digital safety of me and others. I also hereby state that I will strive to educate others with knowledge about digital safety to keep Singaporeans safe in this digital day and age.</p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button id="t-c" type="button" class="btn btn-success">I agree</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Date of pledge -->
+            <div class="mb-4">
+              <label for="date" class="form-label" >Date pledge was taken<span class="text-danger">*</span></label>
+              <input type="date" id="date" class="form-control" name="date" required>
+              <p id="error-date"> </p>
+            </div>
+
+          </section>
+          <button id="final-submit" type="submit" class="btn w-100 fw-semibold text-white" style="background: linear-gradient(135deg,  #72a0ee 0%, #8e4dd4 100%)">Submit</button>
+          <p id="submitMessage" style="color: green; display: none;">Submitted successfully!</p>
+        </form>
+      </div>
+    </div>  
+
+  </main>
+  <footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <h5>Dharun Logesh</h5>
+    <p>Committed to digital wellbeing and cyber safety for youth.</p>
+    <p>Email: <a href="dharunlogesh18@gmail.com" class="text-light text-decoration-none">dharunlogesh18@gmail.com</a></p>
+
+    <div class="my-3">
+      <a href="mailto:dharunlogesh18@gmail.com" class="text-light mx-2 fs-4" aria-label="Mail"><span class="bi bi-envelope"></span></a>
+    </div>
+
+    <small>&copy; 2025 Dharun Logesh. All rights reserved.</small>
+  </div>
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- script js -->
+  <script src="../script.js"></script>
+
+
+</body>
+</html>
+

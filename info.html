@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness & Cyber Safety</title>
+    
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #63B3ED;">
+    <div class="container-fluid">
+    <a class="navbar-brand">
+        <img src="../imgs/logo.jpg" alt="Cyber Safety & Digital Wellness Image" class="rounded-circle" width="70">
+        Digital Wellness & Cyber Safety 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"> <!-- flexbox when expanded, block when compressed -->
+        <div class="navbar-nav">
+        <a class="nav-link me-2" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link active me-2" href="info.html"><b>Informational</b></a>
+        <a class="nav-link me-2" href="form.html">Survey</a>
+        </div>
+    </div>
+    </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <header class="bg-gradient-info text-white py-5" style="min-height: 40vh; display: flex; align-items: center; background: linear-gradient(135deg, #e0a202, #ed6391); ">
+            <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4 ">Master Digital Wellness & Cyber Safety</h1>
+                <p class="text-black fs-5">A comprehensive guide to building healthy digital habits and staying secure online</p>
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <!-- Content Tabs Section -->
+        <!-- MEGA CONTENT SECTION!!! --> <!-- adapted code from https://getbootstrap.com/docs/5.0/components/navs-tabs/ -->
+        <section class="py-4">
+            <div class="container">
+                <!-- Bootstrap Tabs Component -->
+                <ul class="nav nav-pills nav-fill mb-4" id="contentTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="wellness-tab" data-bs-toggle="pill" data-bs-target="#wellness" type="button" role="tab">
+                            <span class="bi bi-heart-fill me-2"></span>Digital Wellness
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="security-tab" data-bs-toggle="pill" data-bs-target="#security" type="button" role="tab">
+                            <span class="bi bi-shield-lock-fill me-2"></span>Cyber Security
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="quiz-tab" data-bs-toggle="pill" data-bs-target="#quiz" type="button" role="tab">
+                            <span class="bi bi-clock-fill me-2"></span>Quiz Time
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools" type="button" role="tab">
+                            <span class="bi bi-tools me-2"></span>Tools & Resources
+                        </button>
+                    </li>
+                </ul>
+            <hr>
+                <div class="tab-content mt-5" id="contentTabsContent">
+                    <!-- Digital Wellness Tab -->
+                    <div class="tab-pane fade show active" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="fw-bold mb-4">Understanding Digital Wellness</h2>
+                                <p class="lead">Digital wellness is about creating a healthy relationship with technology that enhances rather than detracts from your well-being.</p>
+                                
+                                <div class="wellness-content">
+                                    <h4 class="fw-semibold">Core Principles</h4>
+                                    <div class="row g-4 mb-4">
+                                        <div class="col-md-6">
+                                            <div class="principle-card">
+                                                <div class="principle-icon">
+                                                    <span class="fas fa-balance-scale"></span>
+                                                </div>
+                                                <h5>Balance</h5>
+                                                <p>Finding the right amount of screen time that supports your goals without overwhelming your life.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="principle-card">
+                                                <div class="principle-icon">
+                                                    <span class="fas fa-mindfulness"></span>
+                                                </div>
+                                                <h5>Mindfulness</h5>
+                                                <p>Being intentional about when, why, and how you use technology.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fw-semibold">Signs You Need Better Digital Wellness</h4>
+                                    <ul>
+                                        <li>You reach for your phone the moment you wake up.</li>
+                                        <li>You feel anxious when you don't have your phone.</li>
+                                        <li>You check your phone even when there are no notifications.</li>
+                                        <li>You find it hard to concentrate without checking social media.</li>
+                                        <li>You spend more time online than you planned — often without realizing it.</li>
+                                    </ul>
+                                    <h2 class="fw-semibold text-center mt-5">Don't Worry though, this is fixable! <span class="bi bi-emoji-smile text-danger"></span></h2>
+                                        <p class="fw-semibold mt-4 text-center text-primary">Fixing digital wellness isn't about quitting technology — it's about using it smarter.</p>
+
+                                    <!--  -->
+                                    <div class="container mt-5"> <!-- taken from https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_collapsible_accordion&stacked=h -->
+                                        <h2 class="mb-4">Tips on how you can adopt better Digital Wellness</h2>
+                                        <div id="accordion">
+                                            <div class="card">
+                                                <div class="card-header bg-primary">
+                                                    <a class="d-flex btn align-items-center text-white justify-content-between" data-bs-toggle="collapse" href="#collapseOne">
+                                                    Set Healthy Boundaries with Tech <span class="fs-2 bi bi-laptop-fill"></span>
+                                                    </a>
+                                                </div>
+                                                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="row text-center text-md-start align-items-start">
+                                                            <div class="col-12 col-md-8">
+                                                            <p>
+                                                                Create tech-free zones and tech-free times in your day. For example, no phone use during meals, before bed, or while studying. Your brain needs breaks from constant stimulation — and so does your body.
+                                                            </p>
+
+                                                            <h5 class="mt-3 d-flex justify-content-center justify-content-md-start align-items-center">
+                                                                Recommended timings to switch off your phones
+                                                            </h5>
+
+                                                            <p style="font-family: cursive;">
+                                                                <span class="fs-4">🛌</span> <span class="text-success fw-bold">30-60 mins </span> before bedtime
+                                                            </p>
+                                                            <p style="font-family: cursive;">
+                                                                <span class="fs-4">📖</span> <span class="text-info fw-bold">10-15 minutes </span> before studying
+                                                            </p>
+                                                            <p style="font-family: cursive;">
+                                                                <span class="fs-4">🍴</span> <span class="text-danger fw-bold">Immediately </span> before meals
+                                                            </p>
+                                                            </div>
+                                                            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end mt-3 mt-md-0">
+                                                                <img class="rounded" src="../imgs/hero-img.jpg" alt="not fair" style="max-width: 185px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header bg-primary">
+                                                    <a class="collapsed d-flex btn align-items-center text-white justify-content-between" data-bs-toggle="collapse" href="#collapseTwo">
+                                                    Use Technology to Control Technology <span class="fs-2 bi bi-phone-fill"></span>
+                                                    </a>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <!--  -->
+                                                        <div class="row align-items-center text-md-start">
+                                                            <!-- Left Image -->
+                                                            <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center order-md-1 order-1">
+                                                                <img class="img-fluid rounded" src="../imgs/apple_screen_time.jpg" alt="Left image" style="max-width: 150px;">
+                                                            </div>
+
+                                                            <!-- Center Text -->
+                                                            <div class="col-12 col-md-6 mb-3 mb-md-0 text-center order-md-2 order-2">
+                                                                <p class="">Try setting up screen time limits on your phone — it's a simple way to stay in control and cut down on mindless scrolling.</p>
+                                                            </div>
+
+                                                            <!-- Right Image -->
+                                                            <div class="col-12 col-md-3 d-flex justify-content-center order-md-3 order-3 mb-3 mb-md-0">
+                                                                <img class="img-fluid rounded" src="../imgs/android-screen-time.jpg" alt="Right image" style="max-width: 180px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header bg-primary">
+                                                    <a class="collapsed d-flex btn align-items-center text-white justify-content-between" data-bs-toggle="collapse" href="#collapseThree">
+                                                    Declutter Your Digital Space <span class="fs-2 bi bi-trash-fill"></span>
+                                                    </a>
+                                                </div>
+                                                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <!--  -->
+                                                        <div class="row text-center text-md-start align-items-start">
+                                                            <div class="col-12 col-md-8">
+                                                            
+                                                            <h4 id="fomo-text">How <span class="text-danger" id="emotion">Fear</span> Of Missing Out (<span class="text-danger" id="acronym">FOMO</span>) looks like</h4>
+
+                                                            <h5 id="unfollow-instruction" class="mt-5 d-flex justify-content-center justify-content-md-start align-items-center">
+                                                                Try unfollowing some people from your social media
+                                                            </h5>
+
+                                                            <div class="mt-4">
+                                                                <p style="display: inline;">Following <span id="follow-count">50</span> people</p>
+                                                                <button class="btn px-4 py-2 text-white fw-semibold rounded-3 border-0 shadow-sm" 
+                                                                        onclick="unfollow()" 
+                                                                        style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">
+                                                                    Unfollow
+                                                                </button>
+                                                            </div>
+
+                                                            </div>
+                                                            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end mt-3 mt-md-0">
+                                                                <img src="../imgs/instagram-photo.jpg" alt="image of an instagram photo" style="max-height: 350px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header bg-primary">
+                                                    <a class="collapsed d-flex btn align-items-center text-white justify-content-between" data-bs-toggle="collapse" href="#collapseFour">
+                                                    Build a Digital Wellness Routine <span class="fs-2 bi bi-book-fill"></span>
+                                                    </a>
+                                                </div>
+                                                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <h5 class="mb-4 text-center">Check your Digital Wellness Routine</h5>
+                                                        <div class="progress mb-4" style="height: 25px;">
+                                                            <div class="progress-bar bg-success" id="routine-progress" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                                        </div>
+
+                                                        <div class="form-check special mb-3">
+                                                            <input class="form-check-input" type="checkbox" onchange="updateProgress()" id="check1">
+                                                            <label class="form-check-label" for="check1">No screens for the first 1h of the day</label>
+                                                        </div>
+                                                        <div class="form-check special mb-3">
+                                                            <input class="form-check-input" type="checkbox" onchange="updateProgress()" id="check2">
+                                                            <label class="form-check-label" for="check1">Turn off non-essential notifications</label>
+                                                        </div>
+                                                        <div class="form-check special mb-3">
+                                                            <input class="form-check-input" type="checkbox" onchange="updateProgress()" id="check3">
+                                                            <label class="form-check-label" for="check1">Take part in a hobby that is offline.</label>
+                                                        </div>
+                                                        <div class="form-check special mb-3">
+                                                            <input class="form-check-input" type="checkbox" onchange="updateProgress()" id="check4">
+                                                            <label class="form-check-label" for="check1">Create tech-free zones in your house</label>
+                                                        </div>
+                                                        <div class="form-check special mb-3">
+                                                            <input class="form-check-input" type="checkbox" onchange="updateProgress()" id="check5">
+                                                            <label class="form-check-label" for="check1">Turn on night light on devices at night</label>
+                                                        </div>
+                                                        <div class="form-check special mb-3">
+                                                            <input class="form-check-input" type="checkbox" onchange="updateProgress()" id="check6">
+                                                            <label class="form-check-label" for="check1">No phones near the bed when sleeping</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Cyber Security Tab -->
+                    <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <h2 class="fw-bold mb-4">Essential Cybersecurity Practices</h2>
+                                
+                                <!-- Password strength checker -->
+                                <div class="security-assessment mb-5">
+                                    <h4 class="fw-semibold mb-3">Check Your Security Level</h4>
+                                    <h2 class="fw-bold bi bi-lock-fill text-info">
+                                        <span class="text-black fs-4">Password Safety Length Checker</span>
+                                    </h2>
+                                    <input type="password" class="password-input" id="passwordInput" placeholder="Enter password...">
+                                    
+                                    
+                                    <div class="strength-bar">
+                                        <div class="strength-fill" id="strengthFill"></div>
+                                    </div>
+                                    
+                                    <div class="info">
+                                        <span id="strengthLabel">Enter a password</span>
+                                        <span id ="length-display" class="text-end">Length = 0</span>
+                                    </div>
+                                </div>
+
+
+                                <!-- Advanced Security Topics -->
+                                <h4 class="fw-semibold mb-3">Common Cyber Threats to Watch Out For</h4>
+                                <div class="row g-4 mb-5">
+                                    <!-- Phishing Card -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card h-100 border-danger">
+                                            <div class="card-header bg-danger text-white">
+                                                <h5 class=""><span class="bi bi-envelope-exclamation-fill me-2"></span>Phishing Attacks</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Suspicious email addresses</li>
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Urgent action required messages</li>
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Grammar and spelling errors</li>
+                                                    <li class="mb-2"><span class="bi bi-check-circle text-success me-2"></span>Verify sender's identity</li>
+                                                    <li><span class="bi bi-check-circle text-success me-2"></span>Don't click suspicious links</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Malware Card -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card h-100 border-warning">
+                                            <div class="card-header bg-warning text-dark">
+                                                <h5 class=""><span class="bi bi-bug-fill me-2"></span>Malware Threats</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Downloading from untrusted sources</li>
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Opening unknown attachments</li>
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Using outdated software</li>
+                                                    <li class="mb-2"><span class="bi bi-check-circle text-success me-2"></span>Keep software updated</li>
+                                                    <li><span class="bi bi-check-circle text-success me-2"></span>Use antivirus protection</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Password Security Card -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card h-100 border-info">
+                                            <div class="card-header bg-info text-white">
+                                                <h5 class=""><span class="bi bi-shield-lock-fill me-2"></span>Password Insecurity</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Using simple passwords</li>
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Reusing passwords</li>
+                                                    <li class="mb-2"><span class="bi bi-x-circle text-danger me-2"></span>Sharing passwords</li>
+                                                    <li class="mb-2"><span class="bi bi-check-circle text-success me-2"></span>Use password manager</li>
+                                                    <li><span class="bi bi-check-circle text-success me-2"></span>Enable 2FA when possible</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Explanation of different digital attacks -->
+                                <div class="my-5">
+                                    <h4 class="fw-semibold">Explaining different Cyber Attacks in simple terms </h4>
+                                    <!-- Text left, Image right -->
+                                    <div class="mt-4 row mb-5">
+                                        <div class="col-md-8">
+                                            <h5 class="fw-bold text-danger mb-3">Malware attacks</h5>
+                                            <p>Malware is bad software that sneaks into your device to cause harm, like viruses, ransomware (locks your files and asks for money), or spyware (spies on what you do).</p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2"><i class="bi bi-shield-x text-danger me-2"></i>Malwars steals the info and messes the system up</li>
+                                                <li><i class="bi bi-shield-check text-success me-2"></i>Download apps or files from trusted websites or official app stores</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="../imgs/malware.jpg" alt="MITM attack illustration" class="img-fluid rounded shadow" style="max-height: 200px;">
+                                        </div>
+                                    </div>
+                                    <!-- Image left, Text right -->
+                                    <div class="row mb-5">
+                                        <div class="col-md-4 order-md-1 order-2">
+                                            <img src="../imgs/ddos.jpg" alt="DDoS attack illustration" class="img-fluid rounded shadow" style="max-height: 200px;">
+                                        </div>
+                                        <div class="col-md-8 order-md-2 order-1">
+                                            <h5 class="fw-bold text-danger mb-3">DDoS Attacks</h5>
+                                            <p>Think of a DDoS attack like a traffic jam caused on purpose. Attackers flood a website with so many fake visitors that real users can't get through. It's like having thousands of people try to enter a shop at once.</p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2"><i class="bi bi-shield-x text-danger me-2"></i>Websites become slow or unavailable</li>
+                                                <li><i class="bi bi-shield-check text-success me-2"></i>Use DDoS protection services</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Text left, Image right -->
+                                    <div class="mt-5 row mb-5">
+                                        <div class="col-md-8">
+                                            <h5 class="fw-bold text-danger mb-3">Cross-Site Scripting (XSS)</h5>
+                                            <p>Attackers insert bad code into a website, which then runs on visitors' browsers to steal information or hijack sessions.</p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2"><i class="bi bi-shield-x text-danger me-2"></i>Attackers inject malicious scripts into websites, and trick browser in running malicious code</li>
+                                                <li><i class="bi bi-shield-check text-success me-2"></i>Ensure you are using a trusted website that has invested alot into user safety in website browsing</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="../imgs/xss.jpg" alt="MITM attack illustration" class="img-fluid rounded shadow" style="max-height: 200px;">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+    <!--  -->
+                                <div class="mt-5">
+                                        <h3 class="pb-2">Tips on how you can protect yourself online</h3>
+
+
+                                        <!-- Youth Safety Tips -->
+                                        <div class="row g-4">
+                                            <div class="col-md-6">
+                                                <div class="card border-primary h-100 bg-light">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-3"><span class="bi bi-shield-fill-check text-primary me-2"></span>Social Media Safety</h5>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item bg-light">🔒 Make all social media accounts private</li>
+                                                            <li class="list-group-item bg-light">👥 Only accept friend requests from people you know</li>
+                                                            <li class="list-group-item bg-light">🚫 Never share personal information in public posts</li>
+                                                            <li class="list-group-item bg-light">⏰ Set daily time limits for social media apps</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="card border-success h-100 bg-light">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-3"><span class="bi bi-chat-fill text-success me-2"></span>Online Communication</h5>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item bg-light">🤔 Think twice before posting anything online</li>
+                                                            <li class="list-group-item bg-light">❌ Block and report cyberbullies immediately</li>
+                                                            <li class="list-group-item bg-light">📸 Be careful with sharing photos/videos</li>
+                                                            <li class="list-group-item bg-light">🎮 Use gaming chat only with known friends</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="bg-warning rounded-3 p-4">
+                                                    <h5 class="alert-heading"><span class="bi bi-exclamation-triangle-fill me-2"></span>Remember!</h5>
+                                                    <p class="pt-2">From surfing the web, to playing multiplayer video games. If you ever feel unsafe online or suspect a digital attack, inform a trusted adult immediately.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4"> <!-- got the information from https://chatgpt.com/share/68972142-1e08-8010-8bf4-87ea92aa623f  -->
+                                            <div class="container my-4">
+                                                <h3 class="mt-5 fw-semibold" style="font-family: sans-serif;">Some simple tips from <span class="text-primary">Cybersecutiry Specialists</span></h3>
+                                                <div class="ratio ratio-16x9">
+                                                    <iframe src="https://www.youtube.com/embed/aO858HyFbKI"
+                                                            title="YouTube video"
+                                                            allowfullscreen>
+                                                    </iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Quiz Tab -->
+                    <div class="tab-pane fade" id="quiz" role="tabpanel" aria-labelledby="quiz-tab">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="fw-bold mb-4"><span class="bi bi-ui-checks"></span>Test Your Knowledge! 📝</h2>
+                                
+                                <div class="card border-primary">
+                                    <div class="card-header bg-primary text-white">
+                                        <h4>Digital Wellness & Cyber Safety Quiz</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <form id="quiz-form">
+                                            <div class="mb-4">
+                                                <p class="fw-bold">1. Using the same password for all accounts is safe.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q1" value="yes" id="q1-yes">
+                                                    <label class="form-check-label" for="q1-yes">Yes</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q1" value="no" id="q1-no">
+                                                    <label class="form-check-label" for="q1-no">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <p class="fw-bold">2. Taking regular breaks from screens is important for digital wellness.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q2" value="yes" id="q2-yes">
+                                                    <label class="form-check-label" for="q2-yes">Yes</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q2" value="no" id="q2-no">
+                                                    <label class="form-check-label" for="q2-no">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <p class="fw-bold">3. It's safe to share passwords with close friends.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q3" value="yes" id="q3-yes">
+                                                    <label class="form-check-label" for="q3-yes">Yes</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q3" value="no" id="q3-no">
+                                                    <label class="form-check-label" for="q3-no">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <p class="fw-bold">4. Two-factor authentication makes accounts more secure.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q4" value="yes" id="q4-yes">
+                                                    <label class="form-check-label" for="q4-yes">Yes</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q4" value="no" id="q4-no">
+                                                    <label class="form-check-label" for="q4-no">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <p class="fw-bold">5. It's okay to post personal information if your account is private.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q5" value="yes" id="q5-yes">
+                                                    <label class="form-check-label" for="q5-yes">Yes</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q5" value="no" id="q5-no">
+                                                    <label class="form-check-label" for="q5-no">No</label>
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary w-100">Submit Quiz</button>
+                                        </form>
+                                        <div id="quiz-results" class="mt-4" style="display: none;">
+                                            <div class="bg-success text-white rounded-3 fw-bold text-center">
+                                                <h5 class="mb-1">Your Score:</h5>
+                                                <p class="display-4" id="quiz-score">0/5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Resources Tab -->
+                    <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <h2 class="fw-bold mb-4">Helpful Tools & Resources</h2>
+                                <div class="mt-5">
+                                    <h5 class="text-success">
+                                        <span class="bi bi-camera-video text-black mb-3"></span>
+                                        Useful videos
+                                    </h5>
+                                    <p class="text-muted">Security and wellness guides catered to help you</p>
+                                    <div class="row g-5">
+                                        <div class="col-md-4">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/HxySrSbSY7o?si=1lGxqrqZ2CoKVM7a"
+                                                                title="YouTube video"
+                                                                allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/RHUbOjmO7nw?si=yV6O6yEZkbQCkrjm"
+                                                                title="YouTube video"
+                                                                allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/Jax1jM7S1hI?si=VUU6jdNvbUo0rzJY"
+                                                                title="YouTube video"
+                                                                allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- community -->
+                                    <div class="mt-5">
+                                        <h5 class="text-primary">
+                                            <span class="bi bi-people-fill text-black mb-3"></span>
+                                            Community Support
+                                        </h5>
+                                        <p class="text-muted">Connect with others on similar journeys</p>
+                                        <div class="row g-5">
+                                            <div class="col-md-4">
+                                                <div class="card shadow-md w-100 h-auto" >
+                                                    <img src="../imgs/cys.jpg" alt="Cyber Youth Singapore image">
+                                                    <div class="card-body">
+                                                        <h4>Cyber Youth Singapore (CYS)</h4>
+                                                        <p class="pt-2">
+                                                        Over 1000 members strong, A not-for-profit, youth-led organization empowering young people to explore technology responsibly. They run bootcamps, workshops, and campaigns on topics like internet addiction, data privacy, cyberbullying, and media literacy.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card shadow-md w-100 h-auto">
+                                                    <img src="../imgs/digital-intervention.jpg" alt="Cyber Youth Singapore image">
+                                                    <div class="card-body">
+                                                        <h4>TOUCH - DigitalMINDSET Intervention Programme</h4>
+                                                        <p class="pt-2">
+                                                        This 6-9 month intervention targets youths (12-21) struggling with excessive device use and emotional regulation. It focuses on controlling screen time, improving real-life responsibilities, and strengthening family dynamics through therapy and experiential group work.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card shadow-md w-100 h-auto">
+                                                    <img src="../imgs/asip.jpg" alt="Cyber Youth Singapore image">
+                                                    <div class="card-body">
+                                                        <h4>Association of Information Security Professionals (AiSP)</h4>
+                                                        <p>
+                                                        AiSP engages youths and the public through interactive sessions—quizzes, games, and workshops—to raise awareness about cybersecurity, scams, and safe digital behavior. They also involve youth volunteers and institutions like polytechnics and universities to amplify outreach.              
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <h5>Dharun Logesh</h5>
+            <p>Committed to digital wellbeing and cyber safety for youth.</p>
+            <p>Email: <a href="dharunlogesh18@gmail.com" class="text-light text-decoration-none">dharunlogesh18@gmail.com</a></p>
+
+            <div class="my-3">
+            <a href="mailto:dharunlogesh18@gmail.com" class="text-light mx-2 fs-4" aria-label="Mail"><span class="bi bi-envelope"></span></a>
+            </div>
+
+            <small>&copy; 2025 Dharun Logesh. All rights reserved.</small>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
